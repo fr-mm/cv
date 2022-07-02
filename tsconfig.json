@@ -1,9 +1,9 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-      "baseUrl": "src",
-      "lib": ["es2022", "dom"]
+      "lib": ["es2022", "dom"],
+      "noImplicitAny": true
   },
-  "include": ["src", "tests"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

@@ -1,5 +1,4 @@
-import CVPathEnum from "./scripts/cvPathEnum";
-import registerLanguage from "./scripts/registerLanguage";
+import SetUpService from "./services/setUpService";
 
-registerLanguage({ elementId: "brazilian", cvPath: CVPathEnum.brazilian });
-registerLanguage({ elementId: "english", cvPath: CVPathEnum.english });
+const setUpService = new SetUpService();
+setUpService.execute();

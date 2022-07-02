@@ -39,12 +39,43 @@ body {
 }
 
 .flag img:hover {
+  transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter,
+    filter;
+  filter: saturate(2);
   cursor: pointer;
-  animation: shine 0.5s;
-  animation-iteration-count: 1;
 }
-@keyframes shine {
-  50% {
-    filter: saturate(2);
+
+#loader {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 7vh;
+  height: 7vh;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
