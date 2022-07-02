@@ -29,9 +29,22 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  width: 100px;
 }
 
 .flag {
   width: 10vh;
   margin: 1vh;
+  overflow: hidden;
+}
+
+.flag img:hover {
+  cursor: pointer;
+  animation: shine 0.5s;
+  animation-iteration-count: 1;
+}
+@keyframes shine {
+  50% {
+    filter: saturate(2);
+  }
 }
