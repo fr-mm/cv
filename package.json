@@ -2,10 +2,11 @@
   "name": "typescript-boiler",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.html",
+  "type": "module",
   "scripts": {
-    "start": "npx ts-node -r tsconfig-paths/register src/index.html",
-    "test": "jest"
+    "start": "parcel serve src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -13,13 +14,20 @@
     "@tsconfig/node16": "^1.0.3",
     "@types/jest": "^28.1.3",
     "@types/node": "^18.0.0",
+    "@types/pdfjs-dist": "^2.10.378",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.18.0",
+    "gh-pages": "^4.0.0",
     "jest": "^28.1.2",
+    "parcel-bundler": "^1.3.1",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^2.14.305"
   }
 }
