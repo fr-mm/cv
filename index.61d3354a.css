@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  margin: 2vh;
+}
+
+#main {
+  justify-content: center;
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+}
+
+#cv-container {
+  display: flex;
+}
+
+#menu {
+  flex-direction: column;
+}
+
+#languages {
+  width: 100px;
+  flex-direction: column;
+  margin: 2vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.flag {
+  width: 10vh;
+  margin: 1vh;
+  overflow: hidden;
+}
+
+.flag img:hover {
+  cursor: pointer;
+  animation: shine .5s;
+}
+
+@keyframes shine {
+  50% {
+    filter: saturate(2);
+  }
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */
