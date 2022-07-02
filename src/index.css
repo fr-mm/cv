@@ -3,9 +3,5 @@ body {
 }
 
 #cv-container {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  width: 50%;
-  height: 100%;
+  text-align: center;
 }
