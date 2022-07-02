@@ -1,7 +1,37 @@
 body {
   background-color: black;
+  margin: 2vh;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  display: flex;
+  flex: 1;
 }
 
 #cv-container {
-  text-align: center;
+  display: flex;
+}
+
+#menu {
+  flex-direction: column;
+}
+
+#languages {
+  flex-direction: column;
+  margin: 2vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.flag {
+  width: 10vh;
+  margin: 1vh;
 }
