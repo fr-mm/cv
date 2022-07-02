@@ -1,3 +1,5 @@
-import renderCV from "./scripts/renderCV";
+import CVPathEnum from "./scripts/cvPathEnum";
+import registerLanguage from "./scripts/registerLanguage";
 
-renderCV();
+registerLanguage({ elementId: "brazilian", cvPath: CVPathEnum.brazilian });
+registerLanguage({ elementId: "english", cvPath: CVPathEnum.english });
