@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  margin: 2vh;
 }
 
 #main {
@@ -8,44 +7,35 @@ body {
   justify-content: center;
 }
 
-.sidebar {
-  display: flex;
-  flex: 1;
-}
-
 #cv-container {
   display: flex;
+  margin-top: 4.2rem;
 }
 
 #menu {
-  flex-direction: column;
-}
-
-#languages {
-  flex-direction: column;
-  margin: 2vh;
+  position: absolute;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100px;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+#languages {
+  display: flex;
+  flex-direction: row;
 }
 
 .flag {
-  width: 10vh;
-  margin: 1vh;
+  width: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   overflow: hidden;
-}
-
-@media only screen and (max-width: 100px) {
-  .flag {
-    width: 5vw;
-  }
-
-  body {
-    background-color: blue;
-  }
 }
 
 .flag img:hover {
@@ -63,11 +53,11 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  border: 16px solid #f3f3f3;
+  border: 1rem solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 7vh;
-  height: 7vh;
+  border-top: 1rem solid #3498db;
+  width: 3rem;
+  height: 3rem;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }

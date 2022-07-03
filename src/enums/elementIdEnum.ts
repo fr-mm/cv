@@ -1,6 +1,6 @@
 enum ElementIdEnum {
-  brazilianFlag = "brazilian",
-  englishFlag = "english",
+  brazilianFlag = "brazilian-flag",
+  englishFlag = "english-flag",
   cv = "cv",
   loader = "loader",
 }
