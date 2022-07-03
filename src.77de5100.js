@@ -126,8 +126,8 @@ Object.defineProperty(exports, "__esModule", {
 var ElementIdEnum;
 
 (function (ElementIdEnum) {
-  ElementIdEnum["brazilianFlag"] = "brazilian";
-  ElementIdEnum["englishFlag"] = "english";
+  ElementIdEnum["brazilianFlag"] = "brazilian-flag";
+  ElementIdEnum["englishFlag"] = "english-flag";
   ElementIdEnum["cv"] = "cv";
   ElementIdEnum["loader"] = "loader";
 })(ElementIdEnum || (ElementIdEnum = {}));
@@ -142,9 +142,8 @@ Object.defineProperty(exports, "__esModule", {
 var CVPathEnum;
 
 (function (CVPathEnum) {
-  CVPathEnum["english"] = "https://docs.google.com/drawings/d/e/2PACX-1vR9Luxbg0r1QlsGrVEUIiiYT4JMlBfTS100_wC0ghh_OqNJSR2qToLzI-4Kiw0JcwQS2OKSaw9a6iyZ/pub?w=697&amp;h=1013";
-  CVPathEnum["brazilian"] = "https://docs.google.com/drawings/d/e/2PACX-1vQGHvijOg4RCtH-UbEh0rnxUoaEkvbjl3RaWqha6U2AX9L5CFOA-wEbp65U652S2gPohpPv6EiC9J8s/pub?w=697&amp;h=1013";
-  CVPathEnum["raw"] = "https://docs.google.com/drawings/d/e/2PACX-1vR9Luxbg0r1QlsGrVEUIiiYT4JMlBfTS100_wC0ghh_OqNJSR2qToLzI-4Kiw0JcwQS2OKSaw9a6iyZ/pub";
+  CVPathEnum["english"] = "https://docs.google.com/drawings/d/e/2PACX-1vR9Luxbg0r1QlsGrVEUIiiYT4JMlBfTS100_wC0ghh_OqNJSR2qToLzI-4Kiw0JcwQS2OKSaw9a6iyZ/pub?w=1046&h=1519";
+  CVPathEnum["brazilian"] = "https://docs.google.com/drawings/d/e/2PACX-1vQGHvijOg4RCtH-UbEh0rnxUoaEkvbjl3RaWqha6U2AX9L5CFOA-wEbp65U652S2gPohpPv6EiC9J8s/pub?w=1046&h=1519";
 })(CVPathEnum || (CVPathEnum = {}));
 
 exports.default = CVPathEnum;
@@ -11429,7 +11428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40357" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40529" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
