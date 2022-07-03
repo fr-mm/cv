@@ -33,14 +33,18 @@ body {
 }
 
 .flag {
-  width: 20vh;
+  width: 10vh;
   margin: 1vh;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 100px) {
   .flag {
     width: 5vw;
+  }
+
+  body {
+    background-color: blue;
   }
 }
 
