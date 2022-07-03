@@ -42,6 +42,10 @@ body {
   .flag {
     width: 5vw;
   }
+
+  body {
+    background-color: blue;
+  }
 }
 
 .flag img:hover {
